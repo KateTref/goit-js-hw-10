@@ -9,9 +9,10 @@ const DEBOUNCE_DELAY = 300;
 const inputRef = document.querySelector("#search-box");
 const listRef = document.querySelector(".country-list");
 const infoCountryRef = document.querySelector(".country-info");
-let inputValue = "";
 
 inputRef.addEventListener("input", debounce(onSearchCountry, DEBOUNCE_DELAY));
+
+let inputValue = "";
 
 function renderCreateDataMurkup(data) {
     const markup = data.map(createCountriesDataMarkup).join("");
