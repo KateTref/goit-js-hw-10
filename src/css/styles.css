@@ -10,6 +10,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  padding: 50px;
 }
 
 #search-box {
@@ -20,7 +21,42 @@ body {
 }
 ul{
   list-style: none;
+  padding-left: 0;
+
 }
-.country-list {
-list-style: ;
+.country-info__title{
+  display: flex;
+  align-items: center;
+
+}
+
+.country-info__title__flag {
+margin-right: 20px;
+}
+
+.country-info__dscr__item {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.country-list__item{
+  display: flex;
+  align-items: center;
+}
+
+.country-list__flag {
+  margin-right: 10px;
+}
+
+.country-list__name{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+span{
+  font-weight: 500;
+  font-style: italic;
+padding-left: 10px;
 }
