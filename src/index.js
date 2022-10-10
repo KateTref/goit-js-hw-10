@@ -16,11 +16,11 @@ let inputValue = "";
 
 function renderCreateDataMurkup(data) {
     const markup = data.map(createCountriesDataMarkup).join("");
-    infoCountryRef.innerHTML = markup;
+    infoCountryRef.insertAdjacentHTML("beforeend", markup);
 };
 function renderCreateListMurkup(data) {
     const markup = data.map(createCoutriesListMarkup).join("");
-    listRef.innerHTML = markup;
+    listRef.insertAdjacentHTML("beforeend", markup);
 }
 
 function informInvalidRequest() {
